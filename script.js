@@ -16,7 +16,7 @@ function convertToRoman(num) {
 };
   //your code here
 	let roman = '';
-	for(let val of obj){
+	for(let val of Object.values(obj)){
 		while(val[1] <= num){
 			roman += val[0];
 			num -= val[1];
